@@ -61,27 +61,25 @@ This project walks through the following:
 
 ## 📸 Screenshots
 
-- ✅ ![EC2 Launching for S3 Daily Backup Automation Configuration](images/EC2-Instance-For-S3-Backup.png)
-- ✅ IAM & CLI Configuration  
-- ✅ S3 Bucket with Backup File  
-*(See `images/` folder in this repo)*
+- ✅ EC2 Launching for S3 Daily Backup Automation Configuration
+  ![EC2 Launching for S3 Daily Backup Automation Configuration](images/EC2-Instance-For-S3-Backup.png)
+- ✅ IAM Configuration for S3 Bucket Access
+  ![IAM Configuration for S3 Bucket Access](images/IAM-User-For-S3-Backup.png)
+- ✅ AWS CLI Installation and Configuration
+  ![AWS CLI Installation and Configuration](images/AWS-CLI-Configuration-Via-EC2-Connect.png)
+- ✅ S3 Bucket with Backup File (Automated)
+  ![S3 Bucket with Backup File (Automated)](images/s3-bucket-with-backup-uploaded.png)
 
 ---
 
 ## 📌 Summary
 
-This project serves as a practical foundation in **AWS monitoring and alerting**, showcasing the ability to proactively manage and visualize infrastructure health using native AWS services.
+This project serves as a practical foundation in **AWS automation and cloud resource management**, showcasing the ability to proactively manage data backups and infrastructure operations using native AWS services like EC2, S3, IAM, and the AWS CLI.
 
 ---
 
 ## 🏅 Credits
 
 Special thanks to **Sir James Santos** and **Master Cloud Training** for the inspiration and foundational lessons in this guide.  
-This walkthrough is a personalized adaptation based on concepts taught in his eBook:
+This walkthrough is a personalized adaptation based on concepts taught in his eBook: 📘 *Build your First Cloud Portfolio*
 
-📘 *Build your First Cloud Portfolio*
-
----
-
-🔗 **Need Help?**  
-Open an issue or reach out via [LinkedIn](https://www.linkedin.com/in/pgespiritu)
