@@ -59,6 +59,6 @@
 
 Below is a screenshot confirming the IAM user creation with appropriate S3 bucket permissions:
 
-![IAM and S3 Access Screenshot](images/AWS-CLI-Configuration-Via-EC2-Connect.png)
+![IAM and S3 Access Screenshot](images/IAM-User-For-S3-Backup.png)
 
-*This screenshot confirms the successful installation and configuration of the AWS CLI on an EC2 instance. It also shows that the IAM user has been granted S3 access (e.g., via the `AmazonS3FullAccess` policy), and the `backup.sh` script is ready for automated daily backups using cron.*
+*This confirms that an IAM user was successfully created and granted access to a specific S3 bucket. The attached policy allows actions such as listing, uploading, and downloading objects from the bucket, ensuring secure and controlled access to cloud storage.*
