@@ -30,9 +30,9 @@ You’ll be prompted to enter the following (Check the IAM Credentials: Access &
 
 ## 📸 Output Screenshot
 
-### ✅ Successfully Created IAM with S3 Bucket Access
+### ✅ Successfully Installed CLI and Configured
 
-Below is a screenshot confirming the IAM user creation with appropriate S3 bucket permissions:
+Below is a screenshot confirming the installation of CLI and configuration.
 
 ![IAM and S3 Access Screenshot](images/AWS-CLI-Configuration-Via-EC2-Connect.png)
 
