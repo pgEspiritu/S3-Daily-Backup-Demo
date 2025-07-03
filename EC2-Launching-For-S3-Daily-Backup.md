@@ -54,6 +54,6 @@ Click **“Launch Instance”** to start your EC2 setup.
 
 Below is a screenshot of the EC2 instance after successful launch:
 
-![EC2 Instance Screenshot](images/ec2-instance-success.png)
+![EC2 Instance Screenshot](images/EC2-Instance-For-S3-Backup.png)
 
 *This confirms that the EC2 instance named `awscli-lab-instance` was successfully created using the Amazon Linux 2023 AMI and is running under Free Tier settings (t2.micro or t3.micro). The status checks show "2/2 checks passed," indicating the instance is healthy and ready to use.*
