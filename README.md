@@ -1,66 +1,86 @@
-# S3-Daily-Backup-Demo
+# 🛡️ AWS Daily Backup Automation using EC2, S3, and CLI
 
-# ✅ Step 1: Prepare Your Environment (Using Free Tier)
+This repository contains a step-by-step guide to setting up **automated daily backups** from an EC2 instance to an Amazon S3 bucket using the AWS CLI and a scheduled cron job.
 
-## 1. Launch a Free Tier-Eligible EC2 Instance
-
-To stay within the AWS Free Tier, follow these steps:
-
-### 🔹 Sign in to the AWS Console
-
-Go to: [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2)
-
-### 🔹 Launch a New Instance
-
-Click **“Launch Instance”**, then configure the following:
+📁 **Repository Link**: [github.com/pgEspiritu/S3-Daily-Backup-Demo](https://github.com/pgEspiritu/S3-Daily-Backup-Demo)  
 
 ---
 
-### ✅ Basic Settings
+## ✅ Project Overview
 
-- **Name**: `awscli-lab-instance` (or any name you prefer)
+This project walks through the following:
 
-### ✅ Amazon Machine Image (AMI)
+### 1️⃣ [EC2 Instance Launch (Free Tier)](EC2-Launching-For-S3-Daily-Backup.md)
 
-- Select **Amazon Linux 2023 AMI** (Free Tier eligible)
+- Created a **t2.micro** EC2 instance using Amazon Linux 2023.
+- Configured access securely via EC2 Instance Connect.
+- Ensured Free Tier compliance with correct storage and networking settings.
 
-### ✅ Instance Type
+### 2️⃣ IAM User Creation with S3 Permissions
 
-- Choose **t2.micro** or **t3.micro** — both are Free Tier eligible
+- Created an **IAM user** with **programmatic access**.
+- Attached **AmazonS3FullAccess** permission policy.
+- Stored **Access Key ID** and **Secret Access Key** securely.
 
-### ✅ Key Pair (Login)
+### 3️⃣ AWS CLI Installation & Configuration
 
-- **Option 1**: Proceed without a key pair (if using EC2 Instance Connect)
-- **Option 2**: Select/Create a key pair (if using SSH)
+- Installed the **AWS CLI v2** on the EC2 instance.
+- Configured AWS CLI using IAM credentials and default region.
 
-### ✅ Network Settings
+### 4️⃣ S3 Bucket Setup and Daily Backup Script
 
-- Allow **SSH (port 22)** access **from your IP only** for better security
-
-### ✅ Storage (Volume)
-
-- Keep default: **8 GB General Purpose SSD (gp2)**  
-- ⚠️ *Do not increase the volume to stay within Free Tier limits*
-
----
-
-### 🚀 Final Step
-
-Click **“Launch Instance”** to start your EC2 setup.
-
-### 
+- Created an S3 bucket with a globally unique name.
+- Developed a `backup.sh` script to:
+  - Compress local files
+  - Upload to S3
+  - Clean up local storage
+- Scheduled the script with **cron** to run daily at 1 AM.
 
 ---
 
-## 📸 Output Screenshot
+## 🧠 Lessons & Knowledge Gained
 
-### ✅ Successfully Launched EC2 Instance
-
-Below is a screenshot of the EC2 instance after successful launch:
-
-![EC2 Instance Screenshot](images/ec2-instance-success.png)
-
-*This confirms that the EC2 instance named `awscli-lab-instance` was successfully created using the Amazon Linux 2023 AMI and is running under Free Tier settings (t2.micro or t3.micro). The status checks show "2/2 checks passed," indicating the instance is healthy and ready to use.*
+- Understanding of **cloud resource provisioning** (EC2, S3, IAM).
+- Hands-on experience with **AWS CLI installation and setup**.
+- Learned how to:
+  - Create automated solutions using **bash scripting**
+  - Schedule tasks using **cron jobs**
+  - Securely manage and use **IAM credentials**
+- Gained awareness of **AWS Free Tier limits and resource management**
 
 ---
 
+## 💡 What You Just Showed
+
+- 🔁 **Problem Solving**: Implemented an automated solution for recurring backups.
+- ⚙️ **Automation**: Used cron and bash scripting to streamline daily backup tasks.
+- 🔐 **Security Best Practices**: Created least-privilege IAM roles with scoped permissions.
+- ☁️ **Cloud Operations**: Demonstrated cross-service interaction between EC2, S3, and IAM.
+
+---
+
+## 📸 Screenshots
+
+- ✅ IAM & CLI Configuration  
+- ✅ S3 Bucket with Backup File  
+*(See `images/` folder in this repo)*
+
+---
+
+## 📌 Summary
+
+This project serves as a practical foundation in **AWS monitoring and alerting**, showcasing the ability to proactively manage and visualize infrastructure health using native AWS services.
+
+---
+
+## 🏅 Credits
+
+Special thanks to **Sir James Santos** and **Master Cloud Training** for the inspiration and foundational lessons in this guide.  
+This walkthrough is a personalized adaptation based on concepts taught in his eBook:
+
+📘 *Build your First Cloud Portfolio*
+
+---
+
+🔗 **Need Help?**  
+Open an issue or reach out via [LinkedIn](https://www.linkedin.com/in/pgespiritu)
