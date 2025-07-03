@@ -53,19 +53,19 @@ You’ll be prompted to enter the following:
    - (Optional: If you want restricted access, you can create a custom policy scoped to a specific bucket.)
 3. Click Next.
 
--- 
+---
 
 ## 📋 Step 4: Tags (Optional)
 1. Add key-value pairs for tracking if needed (e.g., `Project:Backup`).
 2. Click Next.
 
---
+---
 
 ## ✅ Step 5: Review and Create
 1. Double-check the user settings and permissions.
 2. Click Create user.
 
---
+---
 
 ## 🔑 Step 6: Save Access Credentials
 1. After creation, download the .csv file or copy:
