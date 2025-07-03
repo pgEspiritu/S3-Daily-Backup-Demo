@@ -16,18 +16,18 @@ This project walks through the following:
 - Configured access securely via EC2 Instance Connect.
 - Ensured Free Tier compliance with correct storage and networking settings.
 
-### 2️⃣ IAM User Creation with S3 Permissions
+### 2️⃣ [IAM User Creation with S3 Permissions](Creating-IAM-for-S3.md)
 
 - Created an **IAM user** with **programmatic access**.
 - Attached **AmazonS3FullAccess** permission policy.
 - Stored **Access Key ID** and **Secret Access Key** securely.
 
-### 3️⃣ AWS CLI Installation & Configuration
+### 3️⃣ [AWS CLI Installation & Configuration](CLI-Configuration.md)
 
 - Installed the **AWS CLI v2** on the EC2 instance.
 - Configured AWS CLI using IAM credentials and default region.
 
-### 4️⃣ S3 Bucket Setup and Daily Backup Script
+### 4️⃣ [S3 Bucket Setup and Daily Backup Script](Creating-S3-With-Daily-Backup-Config.md)
 
 - Created an S3 bucket with a globally unique name.
 - Developed a `backup.sh` script to:
@@ -50,7 +50,7 @@ This project walks through the following:
 
 ---
 
-## 💡 What You Just Showed
+## 💡 Skills Demonstrated
 
 - 🔁 **Problem Solving**: Implemented an automated solution for recurring backups.
 - ⚙️ **Automation**: Used cron and bash scripting to streamline daily backup tasks.
@@ -61,6 +61,7 @@ This project walks through the following:
 
 ## 📸 Screenshots
 
+- ✅ ![EC2 Launching for S3 Daily Backup Automation Configuration](images/EC2-Instance-For-S3-Backup.png)
 - ✅ IAM & CLI Configuration  
 - ✅ S3 Bucket with Backup File  
 *(See `images/` folder in this repo)*
